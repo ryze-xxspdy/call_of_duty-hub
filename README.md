@@ -101,4 +101,5 @@ Open http://localhost:8000
     js/dashboard.js dashboard, routing
     supabase/schema.sql   tables, security rules, storage bucket, realtime
 #   c a l l _ o f _ d u t y - h u b  
+ #   c a l l _ o f _ d u t y - h u b  
  
