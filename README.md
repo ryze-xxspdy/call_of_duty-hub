@@ -52,6 +52,11 @@ Open http://localhost:8000
 - **Reactions & comments**: every post has a reaction picker (👍 ❤️ 😂 😮 😢 🔥, one per person, click again to remove)
   and a comment thread. Authors, the commenter and staff can delete comments; post authors get a notification.
   **Re-run `supabase/schema.sql`** to add `post_reactions` / `post_comments` and the updated review function.
+- **Comment replies & message reactions**: every comment has a **Reply** button (one level of threading; replying to a reply
+  adds an `@name`) and its own reaction picker. Chat bubbles (1-to-1 messages and community chat) also take the same six
+  reactions: hover a bubble and press ☺ (tap it on a phone). People get a notification when someone replies to their comment.
+  **Re-run `supabase/schema.sql`** (section 20) to add `post_comments.parent_id`, `comment_reactions`, `message_reactions`
+  and `community_message_reactions`.
 
 - **Announcements**: admins and the developer post them under **Announcements → New announcement**.
   Every user gets a **pop-up** (instantly if online, or at their next login). It shows **once per person**:
@@ -100,9 +105,3 @@ Open http://localhost:8000
     js/contact.js   Contact staff page (message the developer / admins)
     js/dashboard.js dashboard, routing
     supabase/schema.sql   tables, security rules, storage bucket, realtime
-#   c a l l _ o f _ d u t y - h u b  
- #   c a l l _ o f _ d u t y - h u b  
- #   c a l l _ o f _ d u t y - h u b  
- #   c a l l _ o f _ d u t y - h u b  
- #   c a l l _ o f _ d u t y - h u b  
- 
